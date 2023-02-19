@@ -1,5 +1,15 @@
-﻿<h3>Object</h3>
+﻿<div class="d-flex flex-row">
+    <div class="object-info f-lex-flex-column">
+        <img src=$"{@logoSrc}" alt="" class="object-logo">
+        <p class="object-title">@title</p>
+        <p class="object-description">@description</p>
+    </div>
+    <img src=$"{@photoSrc}" alt="">
+</div>
 
 @code {
-
+    [property] string title;
+    [property] string description;
+    [property] string logoSrc;
+    [property] string photoSrc;
 }
